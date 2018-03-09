@@ -1,0 +1,9 @@
+package com;
+
+class Employee {
+
+}
+
+public class Programmer extends Employee {
+
+}

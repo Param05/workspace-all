@@ -1,0 +1,36 @@
+package com;
+
+class Employee {
+	public String name;
+
+	
+	void aaa() {
+
+	}
+}
+
+interface Interviewer {
+}
+
+class Manager extends Employee implements Interviewer {
+	private String addreree;
+
+	void b() {
+
+	}
+}
+
+class HrExecutive extends Employee implements Interviewer {
+}
+
+public class Programmer {
+	public static void main(String[] args) {
+		Interviewer[] interviewers = new Interviewer[] { new Manager(),
+				new HrExecutive(), new Interviewer() {
+				} };
+
+		Employee employee = new Manager();
+		employee.aaa();
+		employee.
+	}
+}

@@ -1,0 +1,37 @@
+package com;
+
+import java.util.Scanner;
+
+public class BinarySearchDemo {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int n = scanner.nextInt();
+		int array[] = new int[n];
+		for (int i = 0; i < array.length; i++) {
+			array[i] = scanner.nextInt();
+		}
+		System.out.println("number to found");
+		int numberToFound = scanner.nextInt();
+		binarySearch(array, 0, array.length - 1, numberToFound);
+
+		scanner.close();
+	}
+
+	private static int binarySearch(int[] array, int i, int j, int numberToFound) {
+		int mid = i + (j - 1) / 2;
+		System.out.println(mid);
+		if (array[mid] == numberToFound) {
+			return mid;
+
+		}
+		if (array[mid] > numberToFound) {
+			binarySearch(array, i, j, numberToFound)
+		}
+		if (array[mid] < numberToFound) {
+
+		}
+
+		return -1;
+	}
+}

@@ -1,0 +1,15 @@
+127.0.0.1 - - [16/Aug/2017:18:15:07 +0530] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [16/Aug/2017:18:15:09 +0530] "GET /springSecurityDemo/ HTTP/1.1" 200 342
+0:0:0:0:0:0:0:1 - - [16/Aug/2017:18:15:14 +0530] "GET /springSecurityDemo/admin HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [16/Aug/2017:18:15:14 +0530] "GET /springSecurityDemo/login HTTP/1.1" 200 913
+0:0:0:0:0:0:0:1 - - [16/Aug/2017:18:15:22 +0530] "POST /springSecurityDemo/j_spring_security_check HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [16/Aug/2017:18:15:22 +0530] "GET /springSecurityDemo/admin HTTP/1.1" 403 993
+0:0:0:0:0:0:0:1 - - [16/Aug/2017:18:15:55 +0530] "GET /springSecurityDemo/login HTTP/1.1" 200 913
+0:0:0:0:0:0:0:1 - - [16/Aug/2017:18:16:02 +0530] "POST /springSecurityDemo/j_spring_security_check HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [16/Aug/2017:18:16:02 +0530] "GET /springSecurityDemo/welcome HTTP/1.1" 200 772
+127.0.0.1 - - [16/Aug/2017:18:33:37 +0530] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [16/Aug/2017:18:33:39 +0530] "GET /springSecurityDemo/ HTTP/1.1" 200 342
+0:0:0:0:0:0:0:1 - - [16/Aug/2017:18:33:43 +0530] "GET /springSecurityDemo/admin HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [16/Aug/2017:18:33:43 +0530] "GET /springSecurityDemo/login HTTP/1.1" 200 913
+0:0:0:0:0:0:0:1 - - [16/Aug/2017:18:33:53 +0530] "POST /springSecurityDemo/j_spring_security_check HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [16/Aug/2017:18:33:55 +0530] "GET /springSecurityDemo/admin HTTP/1.1" 200 456

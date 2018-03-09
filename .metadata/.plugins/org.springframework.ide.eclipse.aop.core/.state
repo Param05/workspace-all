@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="spring-boot-example-rabbitmq"/>
+<aop-project name="bankapplication">
+<aspect-definition advice-class-name="org.springframework.transaction.interceptor.TransactionInterceptor" advice-method-name="invoke" advice-method-parameter-types="org.aopalliance.intercept.MethodInvocation" advice-type="AROUND" aspect-end-line-number="71" aspect-name="org.springframework.transaction.interceptor.TransactionInterceptor#bankapplication#WebContent/WEB-INF/spring-security.xml#71" aspect-start-line-number="71" factory-id="org.springframework.ide.eclipse.aop.core.javaAdvisorDefinitionElementFactory" file="/bankapplication/WebContent/WEB-INF/spring-security.xml" pointcut-expression="(@within(org.springframework.transaction.annotation.Transactional) || @annotation(org.springframework.transaction.annotation.Transactional)) &amp;&amp; execution(* *..*(..))" proxy-target-class="false">
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:bankapplication|3:WebContent/WEB-INF/spring-security.xml|7:beans:9|8:accountFacadeImp:9" bean-file="/bankapplication/WebContent/WEB-INF/spring-security.xml" bean-start-line="9" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/bankapplication/WebContent/WEB-INF/spring-security.xml" source="=CustomAuthenticationWithSpringSecurity/C:\/Users\/parampreet.singh\/.m2\/repository\/org\/springframework\/spring-tx\/4.0.2.RELEASE\/spring-tx-4.0.2.RELEASE.jar&lt;org.springframework.transaction.interceptor(TransactionInterceptor.class[TransactionInterceptor~invoke~Lorg.aopalliance.intercept.MethodInvocation;" source-start-line="-1" target="=bankapplication/src&lt;com.bankapp.service{AccountFacadeImp.java[AccountFacadeImp~transfer~QString;~QString;~D" target-start-line="17"/>
+</aspect-definition>
+</aop-project>
+<aop-project name="springWithHibernate"/>
+<aop-project name="CustomAuthenticationWithSpringSecurity"/>
+<aop-project name="SpringWithJDBC"/>
+</aop-reference-model>

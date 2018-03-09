@@ -1,0 +1,26 @@
+package com;
+
+import java.util.Scanner;
+
+public class Demo1 {
+
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+		int n=scanner.nextInt();
+		maximumNumber(numbers, length, n)
+	}
+
+	private static int maximumNumber(int[] numbers, int length, int n) {
+
+		int max = numbers[0];
+		int result = 0;
+		for (int j = 1; j < n; j++) {
+			if (numbers[j] > max) {
+				max = numbers[j];
+				result = j;
+			}
+		}
+		return result;
+
+	}
+}

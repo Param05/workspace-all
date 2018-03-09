@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;springSecurityDemo&apos; to &apos;springSecurityWithCacheAndHandler&apos;" description="Rename resource &apos;springSecurityDemo&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/springSecurityDemo" name="springSecurityWithCacheAndHandler" stamp="1503576307295" updateReferences="true"/>
+</session>

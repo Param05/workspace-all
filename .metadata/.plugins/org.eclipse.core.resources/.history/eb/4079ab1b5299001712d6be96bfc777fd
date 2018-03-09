@@ -1,0 +1,31 @@
+package com;
+
+class NameRunnable implements Runnable {
+
+	@Override
+	public void run() {
+
+		for (int x = 1; x < 4; x++) {
+			System.out.println("Run by " + Thread.currentThread().getName());
+			try {
+			} catch (InterruptedException ex) {
+			}
+		}
+	}
+}
+
+public class ManyNames {
+	public static void main(String[] args) {
+		// Make one Runnable
+		NameRunnable nr = new NameRunnable();
+		Thread one = new Thread(nr);
+		one.setName("Fred");
+		Thread two = new Thread(nr);
+		two.setName("Lucy");
+		Thread three = new Thread(nr);
+		three.setName("Ricky");
+		one.start();
+		two.start();
+		three.start();
+	}
+}

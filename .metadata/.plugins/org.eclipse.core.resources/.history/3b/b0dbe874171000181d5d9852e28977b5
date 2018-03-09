@@ -1,0 +1,15 @@
+package java8examples;
+
+public class Demo1Thread {
+	public static void main(String[] args) {
+		Thread thread = new Thread(new Runnable() {
+
+			@Override
+			public void run() {
+				// TODO Auto-generated method stub
+
+			}
+		});
+		thread.start();
+	}
+}

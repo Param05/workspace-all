@@ -1,0 +1,5 @@
+127.0.0.1 - - [25/Aug/2017:15:36:04 +0530] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [25/Aug/2017:15:36:08 +0530] "GET /springSecurityWithCacheAndHandler/ HTTP/1.1" 404 949
+0:0:0:0:0:0:0:1 - - [25/Aug/2017:15:36:16 +0530] "GET /springSecurityWithCacheAndHandler/login HTTP/1.1" 200 782
+0:0:0:0:0:0:0:1 - - [25/Aug/2017:15:36:26 +0530] "POST /springSecurityWithCacheAndHandler/j_spring_security_check HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [25/Aug/2017:15:36:26 +0530] "GET /springSecurityWithCacheAndHandler/successfull HTTP/1.1" 200 4

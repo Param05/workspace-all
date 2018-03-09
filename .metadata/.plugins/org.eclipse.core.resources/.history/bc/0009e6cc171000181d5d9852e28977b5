@@ -1,0 +1,18 @@
+package java8examples;
+
+public class Demo1Thread {
+	public static void main(String[] args) {
+		// simple way two make thread
+		Thread thread = new Thread(new Runnable() {
+
+			@Override
+			public void run() {
+				System.out.println("In other thread");
+			}
+		});
+		thread.start();
+
+		Thread thread1 = new Thread(() -> System.out.println("In other thread"));
+		thread1.start();
+	}
+}

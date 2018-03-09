@@ -1,0 +1,43 @@
+package com;
+
+class Employee {
+	public String name;
+
+	void aaa() {
+
+	}
+}
+
+interface Interviewer {
+	void code();
+}
+
+class Manager extends Employee implements Interviewer {
+	public String addreree;
+
+	void b() {
+
+	}
+
+	@Override
+	public void code() {
+		// TODO Auto-generated method stub
+
+	}
+}
+
+class HrExecutive extends Employee implements Interviewer {
+
+	@Override
+	public void code() {
+		// TODO Auto-generated method stub
+
+	}
+}
+
+public class Programmer {
+	public static void main(String[] args) {
+		Interviewer interviewer = new HrExecutive();
+		interviewer.code();
+	}
+}

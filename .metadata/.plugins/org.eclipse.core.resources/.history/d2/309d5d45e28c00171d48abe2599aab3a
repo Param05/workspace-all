@@ -1,0 +1,14 @@
+package com.firstdemo;
+
+class Phone {
+	String a = "1234567890";
+
+	void a() {
+		String a;
+		a = "01";
+	}
+}
+
+public class Test {
+
+}

@@ -1,0 +1,6 @@
+package main.java.hello;
+
+@Componenrt
+public class Reciever {
+
+}

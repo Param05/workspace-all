@@ -1,0 +1,6 @@
+package main.java.hello;
+
+@SpringBootApplication
+public class Application {
+
+}

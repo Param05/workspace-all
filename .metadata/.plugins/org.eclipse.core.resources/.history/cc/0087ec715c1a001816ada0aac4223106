@@ -1,0 +1,4 @@
+public interface TestInterface2 {
+	int i=10;
+	public  void disp();
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.threadPoolDemo.ExecutorService&apos; to &apos;ThreadPoolDemo&apos;&#x0D;&#x0A;- Original project: &apos;ConcurrentPackageExamples&apos;&#x0D;&#x0A;- Original element: &apos;com.threadPoolDemo.ExecutorService&apos;&#x0D;&#x0A;- Renamed element: &apos;com.threadPoolDemo.ThreadPoolDemo&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ExecutorService&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.threadPoolDemo{ExecutorService.java[ExecutorService" matchStrategy="1" name="ThreadPoolDemo" qualified="false" references="true" similarDeclarations="false" stamp="1518283185407" textual="false" version="1.0"/>
+</session>

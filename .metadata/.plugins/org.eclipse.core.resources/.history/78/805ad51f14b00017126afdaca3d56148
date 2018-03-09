@@ -1,0 +1,31 @@
+package com.priorityblockingQueue;
+
+import java.util.concurrent.PriorityBlockingQueue;
+import java.util.concurrent.TimeUnit;
+
+public class PriorityBlockingQueueDemo {
+
+	public static void main(String[] args) throws InterruptedException {
+		PriorityBlockingQueue<Integer> blockingQueueDemo = new PriorityBlockingQueue<>();
+
+		new Thread(() -> {
+			System.out.println("pooling");
+			try {
+				Integer poll = blockingQueueDemo.take();
+				System.out.println("Polled" + poll);
+
+			} catch (Exception exception) {
+				exception.printStackTrace();
+			}
+		}).start();
+		Thread.sleep(TimeUnit.SECONDS.toMillis(5));
+		System.out.println("Adding to queue");
+		blockingQueueDemo.add(1);
+
+		Runnable task2 = () -> {
+			System.out.println("Task #2 is running");
+		};
+		new Thread(task2).start();
+	}
+
+}

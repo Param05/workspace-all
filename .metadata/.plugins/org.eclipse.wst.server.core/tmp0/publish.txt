@@ -1,0 +1,4 @@
+#GlassFish 3
+#Wed Dec 13 23:29:58 IST 2017
+org.eclipse.jst.jee.server\:InventoryManagementSystem=E\:\\glassfish4\\glassfish\\domains\\domain1\\eclipseApps\\InventoryManagementSystem
+org.eclipse.jst.jee.server\:jmsInventoryAssignment=E\:\\glassfish4\\glassfish\\domains\\domain1\\eclipseApps\\jmsInventoryAssignment

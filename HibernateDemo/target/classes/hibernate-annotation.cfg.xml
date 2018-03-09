@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost/hibernatepractice</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">root</property>
+		<!-- Connection Pool Size -->
+		<property name="hibernate.connection.pool_size">1</property>
+
+		<!-- org.hibernate.HibernateException: No CurrentSessionContext configured! -->
+		<property name="hibernate.current_session_context_class">thread</property>
+
+		<!-- Outputs the SQL queries, should be disabled in Production -->
+		<property name="hibernate.show_sql">true</property>
+
+
+		<property name="hibernate.hbm2ddl.auto">create</property>
+
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<!-- <property name="hibernate.cache.use_second_level_cache">true</property> 
+			<property name="hibernate.cache.use_query_cache">true</property> <property 
+			name="net.sf.ehcache.configurationResourceName">/myehcache.xml</property> -->
+		<property name="hibernate.cache.region.factory_class">
+			org.hibernate.cache.ehcache.SingletonEhCacheRegionFactory
+		</property>
+
+
+		<mapping class="com.demo.onetonemapping.Address"></mapping>
+		<mapping class="com.demo.onetonemapping.Student"></mapping>
+
+		<!-- <mapping class="com.demo.secondlevelcache.Address" /> <mapping class="com.demo.secondlevelcache.Student" 
+			/> -->
+
+	</session-factory>
+</hibernate-configuration>

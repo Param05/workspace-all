@@ -1,0 +1,23 @@
+package com.priorityblockingQueue;
+
+import java.util.concurrent.PriorityBlockingQueue;
+
+public class PriorityBlockingQueueDemo {
+
+	public static void main(String[] args) {
+		PriorityBlockingQueue<Integer> blockingQueueDemo = new PriorityBlockingQueue<>();
+
+		new Thread(() -> {
+			System.out.println("pooling");
+			try {
+				Integer poll = blockingQueueDemo.take();
+				System.out.println("Polled" + poll);
+
+			} catch (Exception exception) {
+
+			}
+		}).start();
+
+	}
+
+}

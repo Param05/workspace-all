@@ -1,0 +1,11 @@
+import javax.xml.ws.Dispatch;
+
+
+public interface TestInterface1 {
+	
+	default void disp()
+	{
+		System.out.println("TestInterface1");
+	}
+
+}

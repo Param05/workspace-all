@@ -1,0 +1,13 @@
+package com;
+
+interface Printable {
+
+}
+
+class MyClass {
+
+}
+
+interface Movable {
+
+}

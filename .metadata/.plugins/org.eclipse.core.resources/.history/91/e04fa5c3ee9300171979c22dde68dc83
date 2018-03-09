@@ -1,0 +1,16 @@
+package com;
+
+class Employee {
+
+}
+
+interface Interviewer {
+}
+
+class Manager extends Employee implements Interviewer {
+
+}
+
+public class Programmer extends Employee {
+
+}

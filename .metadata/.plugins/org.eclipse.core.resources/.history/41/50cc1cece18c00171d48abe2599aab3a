@@ -1,0 +1,70 @@
+package com.firstdemo;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class TripletProblem {
+	int finalPointsA = 0;
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int i = 0;
+		int[] arrayforA = new int[3];
+
+		System.out.println("for A the rating are");
+		for (i = 0; i < 3; i++) {
+			arrayforA[i] = scanner.nextInt();
+		}
+		System.out.println(Arrays.toString(arrayforA));
+
+		int[] arrayforB = new int[3];
+		for (i = 0; i < 3; i++) {
+			arrayforB[i] = scanner.nextInt();
+		}
+		System.out.println(Arrays.toString(arrayforB));
+
+		int result[] = compareResult(arrayforA, arrayforB);
+		for (int results : result)
+			System.out.print(results + " ");
+		scanner.close();
+	}
+
+	static int[] compareResult(int[] arrayforA, int[] arrayforB) {
+
+		int finalPointsA = 0;
+		int finalPontsB = 0;
+
+		int alice = arrayforA[0];
+		int bob = arrayforB[0];
+		int alice1 = arrayforA[1];
+		int bob1 = arrayforA[1];
+		int alice2 = arrayforA[2];
+		int bob2 = arrayforB[2];
+		if (alice > bob) {
+			finalPointsA = finalPointsA + 1;
+		}
+		if (alice1 > bob1) {
+			finalPointsA = finalPointsA + 1;
+		}
+		if (alice2 > bob2) {
+			finalPointsA = finalPointsA + 1;
+		}
+		if (alice1 == bob1 || alice == bob || alice2 == bob2) {
+
+		}
+		if (alice < bob) {
+			finalPontsB = finalPontsB + 1;
+		}
+		if (alice1 < bob1) {
+			finalPontsB = finalPontsB + 1;
+		}
+		if (alice2 < bob2) {
+			finalPontsB = finalPontsB + 1;
+		}
+		int finalOutput[] = new int[2];
+		finalOutput[0] = finalPointsA;
+		finalOutput[1] = finalPontsB;
+		return finalOutput;
+	}
+
+}

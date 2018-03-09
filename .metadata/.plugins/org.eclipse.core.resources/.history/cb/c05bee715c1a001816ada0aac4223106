@@ -1,0 +1,6 @@
+public class Test implements TestInterface1, TestInterface2 {
+	
+	
+	
+
+}

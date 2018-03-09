@@ -1,0 +1,17 @@
+package com.web;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+public class HelloController {
+
+	public ModelAndView welcomePage() {
+		ModelAndView modelAndView = new ModelAndView();
+		modelAndView.addObject("title", "spring security");
+		modelAndView.addObject("message", "spring security");
+
+		return modelAndView;
+
+	}
+}

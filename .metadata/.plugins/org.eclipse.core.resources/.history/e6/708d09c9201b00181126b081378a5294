@@ -1,0 +1,26 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+public class ArrayListLoopingExample {
+	public static void main(String[] args) {
+
+		List<String> list = new ArrayList<String>();
+		list.add("Text 1");
+		list.add("Text 2");
+		list.add("Text 3");
+int count=0;
+		Iterator<String> iterator = list.iterator();
+		while (iterator.hasNext()) {
+			if(count==1) break;
+			System.out.println(iterator.next());
+			count++;
+		}
+
+		
+		while (iterator.hasNext()) {
+			System.out.println(iterator.next());
+		}
+
+	}
+}

@@ -1,0 +1,8 @@
+package com;
+
+public class Programmer extends Employee {
+	public Programmer(String value) {
+		name = value;
+	}
+
+}

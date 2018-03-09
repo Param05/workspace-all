@@ -1,0 +1,13 @@
+package com;
+
+public class Programmer extends Employee {
+	public static void main(String[] args) {
+		Employee employee;
+		Programmer programmer = employee;
+	}
+
+	public Programmer(String value) {
+		phoneNumber = value;
+	}
+
+}

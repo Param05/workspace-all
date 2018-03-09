@@ -1,0 +1,5 @@
+public interface TestInterface2 {
+	default void disp() {
+		System.out.println("TestInterface2");
+	}
+}

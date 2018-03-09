@@ -1,0 +1,7 @@
+public class Test implements TestInterface1, TestInterface2 {
+	
+	public void disp() {
+		System.out.println("TestInterface2");
+	}
+
+}

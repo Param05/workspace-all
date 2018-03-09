@@ -1,0 +1,7 @@
+package com.priorityblockingQueue;
+
+public class PriorityBlockingQueueDemo {
+
+	public static void main(String[] args) {
+		
+}

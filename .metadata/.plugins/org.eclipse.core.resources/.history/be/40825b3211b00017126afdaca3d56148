@@ -1,0 +1,9 @@
+package com.priorityblockingQueue;
+
+public class PriorityBlockingQueueDemo implements Runnable {
+
+	public static void main(String[] args) {
+
+	}
+
+}

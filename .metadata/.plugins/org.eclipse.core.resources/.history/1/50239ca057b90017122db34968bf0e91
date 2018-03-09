@@ -1,0 +1,8 @@
+package com.AtomicInteger;
+
+public class JavaAtomic {
+	public static void main(String[] args) {
+		ProcessingThread processingThread = new ProcessingThread();
+		Thread thread = new Thread(processingThread, "t1");
+	}
+}

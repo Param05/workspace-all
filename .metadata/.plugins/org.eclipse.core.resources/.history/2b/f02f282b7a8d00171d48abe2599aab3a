@@ -1,0 +1,20 @@
+package com.firstdemo;
+
+class Phone {
+	String a = "1234567890";
+
+	Phone(String a) {
+		this.a = a;
+	}
+}
+
+public class Test {
+	public static void main(String[] args) {
+
+		Phone phone = new Phone("aaa");
+		phone = null;
+		phone = new Phone("aaaaa");
+		phone = new Phone("aaaaaa");
+
+	}
+}

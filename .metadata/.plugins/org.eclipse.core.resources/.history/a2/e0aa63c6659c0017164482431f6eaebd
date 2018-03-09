@@ -1,0 +1,30 @@
+package com;
+
+class Employee {
+	public String name = "Emp";
+	String address = "aaa";
+}
+
+interface Interviewer {
+	void code();
+}
+
+class HrExecutive extends Employee {
+	String[] specialization;
+	String name = "Pro";
+
+	void pro() {
+		System.out.println(this.name);
+		System.out.println(this.address);
+		System.out.println(super.name);
+		System.out.println(super.address);
+	}
+
+}
+
+public class Programmer {
+	public static void main(String[] args) {
+		HrExecutive interviewer = new HrExecutive();
+		interviewer.pro();
+	}
+}

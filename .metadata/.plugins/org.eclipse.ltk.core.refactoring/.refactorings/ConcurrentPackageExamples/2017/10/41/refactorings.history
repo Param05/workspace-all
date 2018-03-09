@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.linkedBlockingQueue.ObserverConsuming&apos; to &apos;ObserverConsumer&apos;&#x0D;&#x0A;- Original project: &apos;ConcurrentPackageExamples&apos;&#x0D;&#x0A;- Original element: &apos;com.linkedBlockingQueue.ObserverConsuming&apos;&#x0D;&#x0A;- Renamed element: &apos;com.linkedBlockingQueue.ObserverConsumer&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ObserverConsuming&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.linkedBlockingQueue{ObserverConsuming.java[ObserverConsuming" matchStrategy="1" name="ObserverConsumer" qualified="false" references="true" similarDeclarations="false" stamp="1507725088443" textual="false" version="1.0"/>
+</session>

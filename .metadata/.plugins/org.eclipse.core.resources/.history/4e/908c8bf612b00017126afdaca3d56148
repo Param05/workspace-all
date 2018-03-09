@@ -1,0 +1,21 @@
+package com.priorityblockingQueue;
+
+public class PriorityBlockingQueueDemo {
+
+	
+	public static void main(String[] args) {
+		new Thread(() -> {
+			System.out.println("pooling");
+			try {
+
+			} catch (Exception exception) {
+
+			}
+		}).start();
+	}
+
+	}
+	
+	
+	
+}

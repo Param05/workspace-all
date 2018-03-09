@@ -1,0 +1,36 @@
+package java8examples;
+
+class A {
+	A() {
+		System.out.println("super class : constructor");
+	}
+}
+
+class B extends A {
+	static final int STATIC_FINAL = 47;
+	static final int STATIC_FINAL1 = (int) (Math.random() * 5);
+	static {
+		System.out.println("subclass : static intializer");
+	}
+
+	B() {
+		System.out.println("B construcotr");
+	}
+}
+
+public class SuperClass {
+
+	static {
+		System.out.println("initialization stage of main calss");
+	}
+	{
+		System.out.println("initializer in base class ");
+	}
+
+	public static void main(String[] args) {
+		System.out.println("sub class static " + B.STATIC_FINAL);
+		System.out.println("sub class " + B.STATIC_FINAL1);
+		new SuperClass();
+	}
+
+}

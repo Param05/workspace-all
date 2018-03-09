@@ -1,0 +1,7 @@
+package java8examples;
+
+public class Demo1Thread {
+	public static void main(String[] args) {
+
+	}
+}

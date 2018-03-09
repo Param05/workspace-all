@@ -1,0 +1,15 @@
+package com.AtomicInteger;
+
+public class JavaAtomic {
+	public static void main(String[] args) throws InterruptedException {
+		ProcessingThread processingThread = new ProcessingThread();
+		Thread thread = new Thread(processingThread, "thread");
+		thread.start();
+		Thread thread1 = new Thread(processingThread, "thread1");
+		thread1.start();
+		thread.join();
+		thread1.join();
+		System.out.println("result " + processingThread.getCount());
+
+	}
+}

@@ -1,0 +1,7 @@
+package com.AtomicInteger;
+
+public class JavaAtomic {
+	public static void main(String[] args) {
+
+	}
+}

@@ -1,0 +1,18 @@
+package java8examples;
+
+
+Class A{
+	A() {
+		System.out.println("super class : constructor");
+	}
+}
+
+
+
+public class SuperClass {
+	SuperClass() {
+		System.out.println("super class : constructor");
+	}
+	
+	
+}

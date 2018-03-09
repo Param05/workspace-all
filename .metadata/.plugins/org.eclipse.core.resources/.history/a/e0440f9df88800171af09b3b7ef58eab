@@ -1,0 +1,21 @@
+package com;
+
+interface Printable {
+
+}
+
+class MyClass {
+
+}
+
+interface Movable {
+
+}
+
+public class car {
+
+}
+
+public interface Multiple {
+
+}

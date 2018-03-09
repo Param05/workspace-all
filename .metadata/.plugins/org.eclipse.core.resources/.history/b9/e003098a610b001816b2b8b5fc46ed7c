@@ -1,0 +1,9 @@
+package com.config;
+
+@EnableWebMvc
+@Configuration
+@ComponentScan({ "com.mkyong.web.*" })
+@Import({ SecurityConfig.class })
+public class AppConfig {
+
+}
